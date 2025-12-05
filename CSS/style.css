@@ -216,3 +216,48 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+/* ============================ */
+/* Mobile Responsive Styles     */
+/* ============================ */
+@media (max-width: 600px) {
+    .memory-game-blocks {
+        width: 100%;
+        margin: 20px auto;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .memory-game-blocks .game-block {
+        width: 100px;
+        height: 110px;
+    }
+
+    .memory-game-blocks .game-block .front::before {
+        font-size: 80px;
+    }
+
+    .info-container {
+        width: 90%;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .control-buttons span {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    .win-screen .win-box {
+        padding: 30px 20px;
+    }
+
+    .win-screen button {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    #playAgainBtn {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
